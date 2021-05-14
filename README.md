@@ -1,5 +1,5 @@
 # Flexbox-Alignment
-Flexbox hizalama seçeneklerinin etkileşimli cheatsheet'i.
+CSS Flexbox hizalama özelliklerini uygulamalı görüp, ilgili kodu kopyalayabileceğiniz etkileşimli cheat sheet. 
 
 - Yatay hizalama (justify-content), dikey hizalama (align-items), hizalama yönü (flex-direction)
 - Örneklerin etkileşimli gösterimli
