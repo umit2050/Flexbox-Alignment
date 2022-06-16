@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Load an icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="flexbox-alignment.css">
+    <title>Flexbox Alignment</title>
+</head>
+<body>
+
+    <div class="yatay-yazi">Flexbox Alignment</div>
+
+    <!-- Butonlar -->
+    <div class="butonlar">
+        <button onclick="asc(); sola();"><i class="fas fa-align-left"></i> Sola yanaştır</button>
+        <button onclick="asc(); ortala();"><i class="fas fa-align-center"></i> Ortala</button>
+        <button onclick="asc(); saga();">Sağa yanaştır <i class="fas fa-align-right"></i></button>
+        <button onclick="asc(); spacearound();">Space around</button>
+        <button onclick="asc(); spacebetween();">Space between</button>
+        <button onclick="asc(); spaceevenly();">Space evenly</button>
+
+        <button onclick="asfs(); alignstart();"><i class="fas fa-chevron-up"></i> Yukarı hizala</button>
+        <button onclick="asc(); aligncenter();">Dikey ortala</button>
+        <button onclick="asfe(); alignend();"><i class="fas fa-chevron-down"></i> Aşağı hizala</button>
+        <button onclick="asc(); flexcolumn();"><i class="fas fa-ellipsis-v"></i> Dikey hizala</button>
+        <button onclick="asc(); flexcolumnreverse();"><i class="fas fa-sort-alpha-up-alt"></i> Dikey ters hizala</button>
+        <button onclick="asc(); flexrow();"><i class="fas fa-ellipsis-h"></i> Yatay hizala</button>
+        <button onclick="asc(); flexrowreverse();"><i class="fas fa-long-arrow-alt-left"></i> Yatay ters hizala</button>
+
+        <button onclick="asfs();"><i class="fas fa-chevron-up"></i> 1'i Yukarı hizala</button>
+        <button onclick="asc();"><i class="fas fa-ellipsis-h"></i> 1'i Ortala</button>
+        <button onclick="asfe();"><i class="fas fa-chevron-down"></i> 1'i Asağı hizala</button>
+        <button onclick="asc(); ortala();"><i class="fas fa-sync-alt"></i> Sıfırla</button>
+    </div>
+
+    <!-- Kodlar -->
+    <div class="kodlar">
+        <p id="kod" onclick="copy(this)">justify-content: center;</p>
+        <span class="icon"><i class="far fa-copy"></i></span>
+    </div>
+
+    
+    <!-- Hizalama alanı-->
+    <div class="kapsayici">
+        <div class="dikey-yazi"><p>Flexbox Alignment</p></div>
+
+        <div class="wrapper" id="align">
+            <div class="nesne" id="bir"><span class="sira">1</span></div>
+            <div class="nesne"><span class="sira">2</span></div>
+            <div class="nesne"><span class="sira">3</span></div>
+        </div>
+
+        <div class="alt-yazi">Ümit Büyükyıldırım 
+            <a href="https://twitter.com/umit2050" target="_blank"><i class="fab fa-fw fa-twitter text-info"></i></a> 
+            <a href="https://www.linkedin.com/in/uyildirim/" target="_blank"><i class="fab fa-fw fa-linkedin text-info"></i></a> 
+            <a href="https://github.com/umit2050" target="_blank"><i class="fab fa-fw fa-github text-info"></i></a> 
+        </div>
+    </div>
+    <script src="flexbox-alignment.js"></script>
+</body>
+</html>
