@@ -84,14 +84,22 @@ function asfe(){
     kod.innerText = alignSelfEnd;
 }
 
-/* Metin kopyalama */
+// Metin kopyalama
 function copy(that){
-var inp = document.createElement("input");
+let inp = document.createElement("input");
 document.body.appendChild(inp)
 inp.value = that.textContent
 inp.select();
 document.execCommand("copy", false);
 inp.remove();
-/* Metin kopyalama uyarısı */
-alert("✔️ Kopyalandı: " + inp.value);
+// Metin kopyalama uyarısı
+let tooltip = document.querySelector(".tooltip");
+tooltip.innerHTML = "✔️ Kopyalandı: " + inp.value;
+// uyarının açılması ve kapanması
+setTimeout(function(){
+    tooltip.style = "display: block;";
+}, 100);
+setTimeout(function(){
+    tooltip.style = "display: none;";
+}, 3000);
 }
